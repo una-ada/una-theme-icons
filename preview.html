@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Emoji Preview</title>
+    <link rel="stylesheet" href="https://xn--z7x.dev/assets/log.css" />
+    <link rel="shortcut icon" href="/16px/etc/heart_kitty.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      img.emoji {
+        height: 1em;
+        width: 1em;
+        vertical-align: middle;
+        padding-right: 0.5em;
+      }
+      td.glyph {
+        height: 2em;
+        text-align: center;
+        vertical-align: middle;
+      }
+      td.row {
+        border: none !important;
+        text-align: right;
+        vertical-align: middle;
+        width: 10em;
+      }
+    </style>
+    <script src="twemoji.js"></script>
+  </head>
+  <body>
+    <div class="article">
+      <table class="char-chart">
+        <tr class="section">
+          <td></td>
+          <td colspan="16">Smileys & Emotion</td>
+        </tr>
+        <tr>
+          <td class="row">face-smiling</td>
+          <td class="glyph">&#x1f600;</td>
+          <td class="glyph">&#x1f603;</td>
+          <td class="glyph">&#x1f604;</td>
+          <td class="glyph">&#x1f601;</td>
+          <td class="glyph">&#x1f606;</td>
+          <td class="glyph">&#x1f605;</td>
+          <td class="glyph">&#x1f923;</td>
+          <td class="glyph">&#x1f602;</td>
+          <td class="glyph">&#x1f642;</td>
+          <td class="glyph">&#x1f643;</td>
+          <td class="glyph">&#x1fae0;</td>
+          <td class="glyph">&#x1f609;</td>
+          <td class="glyph">&#x1f60a;</td>
+          <td class="glyph">&#x1f607;</td>
+        </tr>
+        <tr>
+          <td class="row">face-affection</td>
+          <td class="glyph">&#x1f970;</td>
+          <td class="glyph">&#x1f60d;</td>
+          <td class="glyph">&#x1f929;</td>
+          <td class="glyph">&#x1f618;</td>
+          <td class="glyph">&#x1f617;</td>
+          <td class="glyph">&#x263a;</td>
+          <td class="glyph">&#x1f61a;</td>
+          <td class="glyph">&#x1f619;</td>
+          <td class="glyph">&#x1f972;</td>
+        </tr>
+        <tr>
+          <td class="row">face-tongue</td>
+          <td class="glyph">&#x1f60b;</td>
+          <td class="glyph">&#x1f61b;</td>
+          <td class="glyph">&#x1f61c;</td>
+          <td class="glyph">&#x1f92a;</td>
+          <td class="glyph">&#x1f61d;</td>
+          <td class="glyph">&#x1f911;</td>
+        </tr>
+        <tr>
+          <td class="row">face-hand</td>
+          <td class="glyph">&#x1f917;</td>
+          <td class="glyph">&#x1f92d;</td>
+          <td class="glyph">&#x1fae2;</td>
+          <td class="glyph">&#x1fae3;</td>
+          <td class="glyph">&#x1f92b;</td>
+          <td class="glyph">&#x1f914;</td>
+          <td class="glyph">&#x1fae1;</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      twemoji.parse(document.getElementsByClassName('article')[0], {base: "/"});
+    </script>
+  </body>
+</html>
