@@ -1,166 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>emoji preview</title>
-    <link rel="stylesheet" href="https://xn--z7x.dev/assets/log.css" />
-    <link rel="shortcut icon" href="/16px/etc/heart_kitty.png" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width" />
-    <style>
-      img.emoji {
-        height: 1em;
-        width: 1em;
-        vertical-align: middle;
-        padding-right: 0.5em;
-      }
-      td.glyph {
-        height: 2em;
-        text-align: center;
-        vertical-align: middle;
-      }
-      td.row {
-        border: none !important;
-        line-height: 1;
-        text-align: right;
-        vertical-align: middle;
-        width: 8em;
-      }
-    </style>
-    <script src="twemoji.js"></script>
-  </head>
-  <body>
-    <div class="article">
-      <pre>
-                    ▄             █▄ █▄         ▄               
-              ██ ██ ████▄ ▄▀▀█▄  ▄██▄████▄ ▄█▀█▄███▄███▄ ▄█▀█▄  
-              ██ ██ ██ ██ ▄█▀██   ██ ██ ██ ██▄█▀██ ██ ██ ██▄█▀  
-             ▄▀██▀█▄██ ▀█▄▀█▄██  ▄██▄██ ██▄▀█▄▄▄██ ██ ▀█▄▀█▄▄▄▄ 
-            ▀▀            ▄                 ▄              ▀▀ ▀▀
-            ██ ▄███▀▄███▄ ████▄▄██▀█   ▄█▀█▄███▄███▄ ▄███▄ ██ ██
-            ██ ██   ██ ██ ██ ██▀███▄   ██▄█▀██ ██ ██ ██ ██ ██ ██
-           ▄██▄▀███▄▀███▀▄██ ▀█▄▄██▀  ▄▀█▄▄▄██ ██ ▀█▄▀███▀▄██▄██
-                                                           ██   
-                                                         ▀▀▀    
-      </pre>
-      <p>
-        when i was a wee kitten, i spent weeks drawing little guys in 
-        microsoft paint using the ball sprite from 3d pinball: space cadet as a 
-        template, but then i saved the file as a jpeg. this was the beginning 
-        of my villain arc.
-      </p>
-      <table class="char-chart">
-        <tr class="section">
-          <td></td>
-          <td colspan="16">smileys & emotion</td>
-        </tr>
-        <tr>
-          <td class="row">face-smiling</td>
-          <td class="glyph">&#x1f600;</td>
-          <td class="glyph">&#x1f603;</td>
-          <td class="glyph">&#x1f604;</td>
-          <td class="glyph">&#x1f601;</td>
-          <td class="glyph">&#x1f606;</td>
-          <td class="glyph">&#x1f605;</td>
-          <td class="glyph">&#x1f923;</td>
-          <td class="glyph">&#x1f602;</td>
-          <td class="glyph">&#x1f642;</td>
-          <td class="glyph">&#x1f643;</td>
-          <td class="glyph">&#x1fae0;</td>
-          <td class="glyph">&#x1f609;</td>
-          <td class="glyph">&#x1f60a;</td>
-          <td class="glyph">&#x1f607;</td>
-        </tr>
-        <tr>
-          <td class="row">face-affection</td>
-          <td class="glyph">&#x1f970;</td>
-          <td class="glyph">&#x1f60d;</td>
-          <td class="glyph">&#x1f929;</td>
-          <td class="glyph">&#x1f618;</td>
-          <td class="glyph">&#x1f617;</td>
-          <td class="glyph">&#x263a;</td>
-          <td class="glyph">&#x1f61a;</td>
-          <td class="glyph">&#x1f619;</td>
-          <td class="glyph">&#x1f972;</td>
-        </tr>
-        <tr>
-          <td class="row">face-tongue</td>
-          <td class="glyph">&#x1f60b;</td>
-          <td class="glyph">&#x1f61b;</td>
-          <td class="glyph">&#x1f61c;</td>
-          <td class="glyph">&#x1f92a;</td>
-          <td class="glyph">&#x1f61d;</td>
-          <td class="glyph">&#x1f911;</td>
-        </tr>
-        <tr>
-          <td class="row">face-hand</td>
-          <td class="glyph">&#x1f917;</td>
-          <td class="glyph">&#x1f92d;</td>
-          <td class="glyph">&#x1fae2;</td>
-          <td class="glyph">&#x1fae3;</td>
-          <td class="glyph">&#x1f92b;</td>
-          <td class="glyph">&#x1f914;</td>
-          <td class="glyph">&#x1fae1;</td>
-        </tr>
-        <tr>
-          <td class="row">face-neutral-skeptical</td>
-          <td class="glyph">&#x1f910;</td>
-          <td class="glyph">&#x1f928;</td>
-          <td class="glyph">&#x1f610;</td>
-          <td class="glyph">&#x1f611;</td>
-          <td class="glyph">&#x1f636;</td>
-          <td class="glyph">&#x1fae5;</td>
-          <td class="glyph">&#x1f636;&#x200d;&#x1f32b;&#xfe0f;</td>
-          <td class="glyph">&#x1f60f;</td>
-          <td class="glyph">&#x1f612;</td>
-          <td class="glyph">&#x1f644;</td>
-          <td class="glyph">&#x1f62c;</td>
-          <td class="glyph">&#x1f62e;&#x200d;&#x1f4a8;</td>
-          <td class="glyph">&#x1f925;</td>
-          <td class="glyph">&#x1fae8;</td>
-          <td class="glyph">&#x1f642;&#x200d;&#x2194;&#xfe0f;</td>
-          <td class="glyph">&#x1f642;&#x200d;&#x2195;&#xfe0f;</td>
-        </tr>
-        <tr>
-          <td class="row">face-sleepy</td>
-          <td class="glyph">&#x1f60c;</td>
-          <td class="glyph">&#x1f614;</td>
-          <td class="glyph">&#x1f62a;</td>
-          <td class="glyph">&#x1f924;</td>
-          <td class="glyph">&#x1f634;</td>
-          <td class="glyph">&#x1fae9;</td>
-        </tr>
-        <tr>
-          <td class="row">face-unwell</td>
-          <td class="glyph">&#x1f637;</td>
-          <td class="glyph">&#x1f912;</td>
-          <td class="glyph">&#x1f915;</td>
-          <td class="glyph">&#x1f922;</td>
-          <td class="glyph">&#x1f92e;</td>
-          <td class="glyph">&#x1f927;</td>
-          <td class="glyph">&#x1f975;</td>
-          <td class="glyph">&#x1f976;</td>
-          <td class="glyph">&#x1f974;</td>
-          <td class="glyph">&#x1f635;</td>
-          <td class="glyph">&#x1f635;&#x200d;&#x1f4ab;</td>
-          <td class="glyph">&#x1f92f;</td>
-        </tr>
-        <tr>
-          <td class="row">face-hat</td>
-          <td class="glyph">&#x1f920;</td>
-          <td class="glyph">&#x1f973;</td>
-          <td class="glyph">&#x1f978;</td>
-        </tr>
-        <tr>
-          <td class="row">face-glasses</td>
-          <td class="glyph">&#x1f60e;</td>
-          <td class="glyph">&#x1f913;</td>
-          <td class="glyph">&#x1f9d0;</td>
-        </tr>
-      </table>
-    </div>
-    <script>
-      twemoji.parse(document.getElementsByClassName('article')[0], {base: "/"});
-    </script>
-  </body>
+<head>
+  <title>emoji preview</title>
+  <link rel="stylesheet" href="https://xn--z7x.dev/assets/log.css" />
+  <link rel="shortcut icon" href="/16px/etc/heart_kitty.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    img.emoji {
+      height: 1em;
+      width: 1em;
+      vertical-align: middle;
+      padding-right: 0.5em;
+    }
+    td.glyph {
+      height: 2em;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      width: 2em;
+      word-wrap: anywhere;
+    }
+    td.row {
+      border: none !important;
+      line-height: 1;
+      text-align: right;
+      vertical-align: middle;
+      width: calc(8em - 2px);
+    }
+  </style>
+  <script src="lib/twemoji.js"></script>
+  <script>
+    const 
+    newElement = (tag, contents = '', attributes = {}, children = []) => {
+      let el = document.createElement(tag);
+      el.innerHTML = contents;
+      Object.keys(attributes).forEach(v => el.setAttribute(v, attributes[v]));
+      children.forEach(child => el.appendChild(child));
+      return el;
+    };
+  </script>
+</head>
+
+<body>
+  <div class="article">
+    <pre>
+                      ▄             █▄ █▄         ▄               
+                ██ ██ ████▄ ▄▀▀█▄  ▄██▄████▄ ▄█▀█▄███▄███▄ ▄█▀█▄  
+                ██ ██ ██ ██ ▄█▀██   ██ ██ ██ ██▄█▀██ ██ ██ ██▄█▀  
+               ▄▀██▀█▄██ ▀█▄▀█▄██  ▄██▄██ ██▄▀█▄▄▄██ ██ ▀█▄▀█▄▄▄▄ 
+              ▀▀            ▄                 ▄              ▀▀ ▀▀
+              ██ ▄███▀▄███▄ ████▄▄██▀█   ▄█▀█▄███▄███▄ ▄███▄ ██ ██
+              ██ ██   ██ ██ ██ ██▀███▄   ██▄█▀██ ██ ██ ██ ██ ██ ██
+             ▄██▄▀███▄▀███▀▄██ ▀█▄▄██▀  ▄▀█▄▄▄██ ██ ▀█▄▀███▀▄██▄██
+                                                             ██   
+                                                           ▀▀▀    
+    </pre>
+    <p>
+      when i was a wee kitten, i spent weeks drawing little guys in 
+      microsoft paint using the ball sprite from 3d pinball: space cadet as a 
+      template, but then i saved the file as a jpeg. this was the beginning 
+      of my villain arc.
+    </p>
+    <p>
+      this page dynamically loads all emoji from a json file before running 
+      twemoji on them; it could take a few seconds to load.
+    </p>
+    <table class="char-chart"></table>
+  </div>
+  <script>
+    let output = document.querySelector('.char-chart');
+    fetch('/lib/emoji.json')
+      .then(r => r.json())
+      .then(r => Object.keys(r).forEach(i => {
+        output.appendChild(newElement('tr', '', {class: 'section'}, [
+          newElement('td'),
+          newElement('td', i.toLowerCase(), {colspan: 16})
+        ]));
+        Object.keys(r[i]).forEach(j => {
+          let row = newElement('tr', '', {}, [
+            newElement('td', j,  {class: 'row'})
+          ]);
+          for(let k = 0; k < r[i][j].length; k++){
+            if(row.children.length == 17) {
+              output.appendChild(row);
+              row = newElement('tr', '', {}, [
+                newElement('td', '', {class: 'row'})
+              ]);
+            }
+            if(r[i][j][k].qual == 'fully-qualified')
+              row.appendChild(newElement('td',
+                r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''),
+                {class: 'glyph'}
+              ));
+          }
+          output.append(row);
+        })
+      }) || twemoji.parse(output, {base: "/"}));
+  </script>
+</body>
 </html>
