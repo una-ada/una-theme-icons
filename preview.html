@@ -15,19 +15,14 @@
       width: 1em;
     }
     td.glyph {
-      height: 2em;
-      overflow: hidden;
-      text-align: center;
-      vertical-align: middle;
-      width: 2em;
-      word-wrap: anywhere;
+      display: contents;
     }
     td.row {
-      border: none !important;
       line-height: 1;
+      padding-right: 0.5em !important;
       text-align: right;
       vertical-align: middle;
-      width: calc(8em - 2px);
+      width: 11.5em;
     }
   </style>
   <script src="lib/twemoji.js"></script>
@@ -92,14 +87,14 @@
       .then(r => Object.keys(r).forEach(i => {
         output.appendChild(newElement('tr', '', {class: 'section'}, [
           newElement('td'),
-          newElement('td', i.toLowerCase(), {colspan: 16})
+          newElement('td', i.toLowerCase(), {colspan: 18})
         ]));
         Object.keys(r[i]).forEach(j => {
           let row = newElement('tr', '', {}, [
             newElement('td', j,  {class: 'row'})
           ]);
           for(let k = 0; k < r[i][j].length; k++){
-            if(row.children.length == 17) {
+            if(row.children.length == 19) {
               output.appendChild(row);
               twemoji.parse(row, {base: "/"});
               row = newElement('tr', '', {}, [
