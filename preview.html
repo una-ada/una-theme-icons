@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
   <title>emoji preview</title>
   <link rel="stylesheet" href="https://xn--z7x.dev/assets/log.css" />
@@ -24,6 +24,17 @@
       vertical-align: middle;
       width: 11.5em;
     }
+    html.light {
+      color: var(--color-black);
+    }
+    html.light body {
+      background: var(--color-lotus);
+    }
+    html.light table[class*="-chart"],
+    html.light table[class*="-chart"] tr,
+    html.light table[class*="-chart"] td {
+      border-color: var(--color-black) !important;
+    }
   </style>
   <script src="lib/twemoji.js"></script>
   <script>
@@ -35,6 +46,15 @@
       children.forEach(child => el.appendChild(child));
       return el;
     };
+    window.isLightMode = false;
+    window.toggleLightMode = function(){
+      document.getElementsByTagName('html')[0].classList[
+        (isLightMode = !isLightMode) ? 'add' : 'remove'
+      ]('light');
+    }
+    document.addEventListener('keypress', e =>
+      e.keyCode == 68 && e.shiftKey && toggleLightMode()
+    );
   </script>
 </head>
 
@@ -103,8 +123,14 @@
             }
             if(r[i][j][k].qual == 'fully-qualified' || i == 'Component')
               row.appendChild(newElement('td',
-                r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''),
-                { class: 'glyph', title: r[i][j][k].cldr}
+                r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''), {
+                  class: 'glyph',
+                  title: [
+                    ['child',  'kit'  ], ['girl',  'kitten'], ['boy', 'puppy'],
+                    ['person', 'fox'  ], ['woman', 'cat'   ], ['man', 'dog'  ],
+                    ['people', 'foxes'], ['women', 'cats'  ], ['men', 'dogs' ],
+                  ].reduce((a, [i, j]) => a.replaceAll(i, j), r[i][j][k].cldr)
+                }
               ));
           }
           output.append(row);
