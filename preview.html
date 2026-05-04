@@ -141,9 +141,10 @@
                 r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''), {
                   class: 'glyph',
                   title: [
-                    ['child',  'kit'  ], ['girl',  'kitten'], ['boy', 'puppy'],
-                    ['person', 'fox'  ], ['woman', 'cat'   ], ['man', 'dog'  ],
-                    ['people', 'foxes'], ['women', 'cats'  ], ['men', 'dogs' ],
+                    ['child',  'kit'  ], ['girl',  'kitten'], ['boy',  'puppy'],
+                    ['person', 'fox'  ], ['woman', 'cat'   ], ['man',  'dog'  ],
+                    ['people', 'foxes'], ['women', 'cats'  ], ['men',  'dogs' ],
+                    ['skullcap','gua pi mao']
                   ].reduce((a, [i, j]) => a.replaceAll(i, j), r[i][j][k].cldr)
                 }
               ));
